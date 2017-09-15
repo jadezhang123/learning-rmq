@@ -54,8 +54,7 @@ public class Consumer {
 					System.out.println("消息个数：" + msgs.size());
 
 					for (MessageExt msgExt : msgs) {
-						System.out
-								.printf(" Receive Messages: " + msgExt + "%n");
+						System.out.printf(" Receive Messages: " + msgExt + "%n");
 					}
 					System.out.println("######################消费结束");
 					return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
