@@ -41,7 +41,6 @@ public class Consumer {
 		consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
 		consumer.setConsumeMessageBatchMaxSize(3);
 		consumer.subscribe("TopicTest_B", "TagA");
-		consumer.subscribe("TopicTest_A", "tagB");
 		consumer.registerMessageListener(new MessageListenerConcurrently() {
 
 			@Override
